@@ -1,0 +1,140 @@
+{#<html>#}
+{#<head>#}
+{#    <title>Template Project</title>#}
+{#</head>#}
+{#<style>#}
+{#    h1{#}
+{#        color: red;#}
+{#        font-size: 100px;#}
+{#        text-shadow: 5px 5px 3px blue,#}
+{#                    10px 10px 5px green,#}
+{#                    15px 15px 8px black;#}
+{#    }#}
+{#    h2{#}
+{#        margin-top: -70px;#}
+{#        font-size: 40px;#}
+{#    }#}
+{#    th,td{#}
+{#        padding: 20px 40px;#}
+{#        text-align: center;#}
+{#        font-size: 30px;#}
+{#        text-shadow: 2px 2px 2px red;#}
+{#    }#}
+{#    table{#}
+{#        margin-top: -30px;#}
+{#        box-shadow: 5px 5px 5px red;#}
+{#    }#}
+{#    body{#}
+{#        background-color: skyblue;#}
+{#    }#}
+{#</style>#}
+{#<body>#}
+{#<center><h1>Welcome to DurgaSoft</h1></center>#}
+{#<center><h2>Employee Information</h2>#}
+{##}
+{#<table border="2px">#}
+{#    <thead>#}
+{#    <tr>#}
+{#        <th>Emp Num</th>#}
+{#        <th>Emp Name</th>#}
+{#        <th>Emp Sal</th>#}
+{#    </tr>#}
+{#    </thead>#}
+{#    <tbody>#}
+{#    <tr>#}
+{#        <td>101</td>#}
+{#        <td>Sai</td>#}
+{#        <td>10000</td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#        <td>102</td>#}
+{#        <td>Nani</td>#}
+{#        <td>20000</td>#}
+{#    </tr>#}
+{#    <tr>#}
+{#        <td>103</td>#}
+{#        <td>Satya</td>#}
+{#        <td>15000</td>#}
+{#    </tr>#}
+{#    </tbody>#}
+{#</table>#}
+{#    </center>#}
+{#</body>#}
+{#</html>#}
+{##}
+{#<html>#}
+{#<head>#}
+{#    <title>Selectors</title>#}
+{#</head>#}
+{#<style>#}
+{#    #h11{  color: red;  }#}
+{#    #h12{  text-decoration: underline; }#}
+{#    .cls1{ font-family: cursive; }#}
+{#    .cls2{ background-color: green; }#}
+{#    .cls3{ font-size: 50px; }#}
+{#    h1{ text-align: center; }#}
+{#</style>#}
+{#<body>#}
+{#<h1 class="cls2">Welcome to Django</h1>#}
+{#<h1 id="h11" class="cls3">Welcome to Durgasoft</h1>#}
+{#<h1 class="cls1 cls2 cls3">Welcome to UI</h1>#}
+{#<h1 class="cls1 cls3">Welcome to HTML</h1>#}
+{#<h1 class="cls1 cls2">Welcome to CSS</h1>#}
+{#<h1 id="h12" class="cls2">Welcome to Bootstrap</h1>#}
+{#</body>#}
+{#</html>#}
+
+
+<html>
+<head>
+    <title>Grid System</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<style>
+    #con1{border: 3px red solid;}
+    #row1{border: 3px blue solid;}
+    #con1row1div1{background-color: green;}
+    #con1row1div2{background-color: red;}
+    #con1row1div3{background-color: blue;}
+    #row2{border: 3px black solid;}
+    #con1row2div2{background-color: orchid;}
+    #row3{border: 3px green solid;}
+    #con1row3div1{background-color: darksalmon;}
+    #con1row3div2{background-color: darkcyan;}
+</style>
+<body>
+<h1 class="text-center">Grid System</h1>
+<div class="container" id="con1">
+    <div class="row" id="row1">
+        <div class="col-md-4" id="con1row1div1">
+            <h2 class="text-center text-white">Durgasoft</h2>
+        </div>
+        <div class="col-md-4" id="con1row1div2">
+            <h2 class="text-right text-success">Django</h2>
+        </div>
+        <div class="col-md-4" id="con1row1div3">
+            <h2 class="text-center text-white">Python</h2>
+        </div>
+    </div>
+    <div class="row" id="row2">
+        <div class="offset-md-6 col-md-6" id="con1row2div2">
+            <h2 class="text-center text-white text-uppercase">UI Technologies</h2>
+        </div>
+    </div>
+    <div class="row" id="row3">
+        <div class="col-md-4" id="con1row3div1">
+            <h2 class="text-center text-danger">Hyderabad</h2>
+        </div>
+        <div class="offset-md-4 col-md-4" id="con1row3div2">
+            <h2 class="text-center text-warning">Telangana</h2>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

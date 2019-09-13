@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Cust Data</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <style>
+        .cls1{  margin-top: -20px;  }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+    <h2>Please Enter Your Details..</h2>
+    <form method="POST">
+       {% csrf_token %}
+        <label>Enter Your Name:</label>
+        <input type="text" name="cname" class="form-control"> <br>
+        <label class="cls1">Enter Your Sales:</label>
+        <input type="number" name="num" class="form-control"> <br>
+        <label class="cls1">Enter Your Mobile:</label>
+        <input type="number" name="mobile" class="form-control"> <br>
+        <label class="cls1">Enter Your Email:</label>
+        <input type="email" name="email" class="form-control"> <br>
+        <center>
+            <input type="submit" value="Submit" class="btn btn-success">
+            <input type="reset" value="Clear" class="btn btn-danger">
+        </center>
+    </form>
+    </div>
+    </div>
+</div>
+</body>
+</html>

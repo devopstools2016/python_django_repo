@@ -1,0 +1,10 @@
+7
+
+The syntax for specifying url is {% url namespace:url_name %}.
+ So, check if you have added the app_name in urls.py.
+
+In my case, I had misspelled the url_name.
+The urls.py had the following content path('<int:question_id>/', views.detail, name='question_detail')
+whereas the index.html file had the following entry
+ <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>.
+  Notice the incorrect name.

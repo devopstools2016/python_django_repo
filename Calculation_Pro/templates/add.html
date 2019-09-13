@@ -1,0 +1,10 @@
+<form action="./calculation_app/output" method="get">
+    {% csrf_token %}
+    Enter fno : <input type="text" name="t1"> <br><br>
+    Enter sno : <input type="text" name="t2"> <br><br>
+
+               <input type="submit" value="add" name="but">
+               <input type="submit" value="sub" name="but">
+               <input type="submit" value="mul" name="but">
+               <input type="submit" value="div" name="but">
+</form>
